@@ -31,7 +31,7 @@ header .container{
 h2.logo{
     color: var(--vermelho);
     font-family: 'Arial Black',Times;
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 5px;
 }
 
@@ -51,7 +51,7 @@ header nav a:hover{
 
 .filme-principal .container{
     
-    height: 300px;
+  width: 90%;
 }
 
 .filme-principal{
@@ -69,17 +69,17 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-top: 15px;
     margin-bottom: 20px;
-    margin-left: 5%;
+    width: 30%;
 }   
 .titulo{
     font-size: 40px;
     margin-top: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 5%;
+  
 }
 
 .botoes{
-margin-left: 2%;
+
 margin-top: 25px;
 }
 .botao{
@@ -102,3 +102,15 @@ margin-top: 25px;
 .botao i {
     margin-right: 8px;
 }
+.container{
+    margin-left: 30px;
+}
+
+/* Imagens carrosel*/
+
+ .box-filme{
+     height: 100%;
+     width: 100%;
+     display: block;
+     
+ }
