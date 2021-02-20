@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <!--RESPONSIVE CSS-->
+    <link rel="stylesheet" href="style/responsive.css">
     <!--OWL CSS-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
@@ -14,13 +16,15 @@
     <!--HEADER-->
     <header>
      <div class="container">
-         <h2 class="logo">GMFLIX</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
-            </nav> 
+         <a id="botaoGM" href="#">
+                <h2 class="logo">GMFLIX</h2>
+                    <nav>
+                        <a href="#">Inicio</a>
+                        <a href="#">Séries</a>
+                        <a href="#">Filmes</a>
+                        <a href="#">Documentários</a>
+                    </nav>
+         </a>            
          
      </div>  
        
@@ -28,12 +32,12 @@
     <!--MAIN-->
     <main>
         <div class="filme-principal">
-            <div class="container">
+            <div id="container2">
                 <h3 class="titulo"> Por Trás de Seus Olhos</h3>
                 <p class="descricao">Uma mãe solo se envolve em um jogo perigoso ao ter um caso com o chefe e fazer amizade com a enigmática esposa dele.</p>
 
                 <div class="botoes">
-                    <button class="botao" role="button"> 
+                    <button onclick="clicou()" class="botao" role="button"> 
                         <i class="fas fa-play"></i>
                         Assistir Agora
                     </button>
@@ -43,9 +47,19 @@
                     </button>
                 </div>
             </div>
-            
-           
+            <!--JANELA FECHAR TRAILLER-->
+            <div class="close">
+                <input  onclick="fecharVideo()" type="checkbox" name="close" id="window-close">
+                <label id="icon" for="window-close">
+                    <span id="left"></span>
+                    <span id="right"></span>  
+                </label>
+            </div> 
+           <!--VIDEO (TRAILLER)-->
+            <video id="trailler1" src="movie/trailler.mp4" controls autoplay  width="700px"></video>
         </div>
+      
+     
 
         
     </main>
@@ -71,6 +85,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/owl/index.js"></script>
     
 </body>
 </html>
