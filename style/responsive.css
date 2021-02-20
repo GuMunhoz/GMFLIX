@@ -9,8 +9,59 @@
         /* width : 190 px;
          */
     }
+    #trailler1{
+        margin-left: 15%;
+        width: 500px;
+    }
+
 }
-/* 
-@media screen and (min-width:100px){
-    .descricao
-} */
+
+/* Smartphone */
+
+@media screen and (max-width:450px){
+    header .container{
+        display:flex;
+        flex-direction: column;
+         }
+         header nav a {
+            
+            margin-right: 5px;
+        
+        }   
+ 
+    .botao{
+        margin-top: 5px;
+        /* width : 190 px;
+         */
+    }
+    #trailler1{
+        margin-left: 15%;
+        width: 500px;
+    }
+
+    .filme-principal{
+       
+        height: 290px;
+        
+    }
+
+    .filme-principal .descricao{
+        margin-top: 80px;
+        margin-left: 2px;
+        width: 60%;
+    } 
+    
+    .titulo{
+        font-size: 28px;
+        margin-top: 15%;
+       
+    }
+    .carrosel-filmes{
+        margin-top: 60px;
+    }
+
+
+   .filme-principal #container2{
+       margin-left: 10px;
+   }
+}
